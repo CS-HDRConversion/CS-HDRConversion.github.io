@@ -1,5 +1,5 @@
 
-Home page for <https://dl4sr.github.io/dl4sr22/>
+Home page for <https://cs-hdrconversion.github.io/>
 
 
 
