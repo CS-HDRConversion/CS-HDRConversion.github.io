@@ -18,12 +18,12 @@
 
     <!-- Style CSS -->
     <link href="css/style.css" rel="stylesheet">
-<style>
-   button.collapsible {background-color: #777;color: white;cursor: pointer;padding: 18px;width: 100%;border: none;text-align: left;outline: none;font-size: 15px;}
-button.collapsible:hover {background-color: #555;}
-div.content1 {padding: 0 18px;display: none;background-color: #f1f1f1;}
-a {color: blue;}
-</style>
+	<style>
+	button.collapsible {background-color: #777;color: white;cursor: pointer;padding: 18px;width: 100%;border: none;text-align: left;outline: none;font-size: 15px;}
+	button.collapsible:hover {background-color: #555;}
+	div.content {padding: 0 18px;display: none;background-color: #f1f1f1;}
+	a {color: blue;}
+	</style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -269,5 +269,20 @@ Moreover, adversarial samples have also been proven very successful in attacking
 
 <!--<script src="js/one-page-nav.js"></script>-->
 <script src="js/scripts.js"></script>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>			   
 </body>
 </html>
