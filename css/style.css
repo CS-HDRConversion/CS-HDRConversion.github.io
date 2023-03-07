@@ -387,6 +387,34 @@ button:focus,
     font-weight : bold;
     }
 
+
+.jumbotron .mycontent {
+    color             : #FFFFFF;  
+    position          : absolute;
+    top               : 55%;
+    left              : 0;
+    right             : 0;
+    height            : 30%;
+    width             : 100%;
+    margin            : 0 auto;
+    padding           : 0 10%;
+    transform         : translateY(-50%);
+    -webkit-transform : translateY(-50%);
+    -moz-transform    : translateY(-50%);
+    }
+
+.jumbotron .mycontent h1 {
+    color       : #FFFFFF; 
+    font-weight : bold;
+    }
+
+.jumbotron .mycontent p.lead {
+    font-size   : 24px;
+    line-height : 1.5em;
+    color       : rgba(255,255,255);
+    font-weight : bold;
+    }
+
 .jumbotron .content .event-date {
     font-size     : 24px;
     margin-bottom : 40px;
