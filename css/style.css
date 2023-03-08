@@ -347,7 +347,7 @@ button:focus,
 
 .jumbotron {
     background            : url("../background1.png");
-    background-size       : contain;
+    background-size       : cover;
     padding               : 0;
     margin                : 0;
     height                : 100vh;
